@@ -1,0 +1,156 @@
+﻿body 
+{
+    font-family: Calibri;
+}
+#okvir
+{
+   height: 700px;
+}
+#header 
+{
+    background-color: #77C9D4;
+}
+#logo {
+    width: 120px;
+    height: 100px;
+    padding:1%;
+}
+
+h1 {
+    float: right;
+    color: white;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+#meni 
+{
+    clear: both;
+    overflow: hidden;
+    text-align: left;
+    background-color:#57BC90;
+    width:100%;
+}
+#meni ul
+{
+    margin-left: -1%;
+}
+
+
+#meni ul li 
+{
+    display: inline-block;
+    margin-right: 1%;
+    font-weight:bold;
+    font-size:20px;
+}
+#meni a
+{
+    color: white;
+    text-decoration:none;
+}
+#meni a:visited
+{
+    text-decoration:none;
+}
+#side, #glavniSadrzaj
+{
+    height: 100%;
+}
+
+#glavniSadrzaj 
+{
+    width: 65%;
+    
+    float:right;
+    padding:5%;
+    box-sizing: border-box;
+    background-color: #A5A5AF ;
+    overflow-y: scroll;
+}
+
+.godina
+{
+    background-color: #FFFFFF;
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    box-sizing:border-box;
+    padding: 10px;
+}
+p:nth-child(2n+1)
+{
+    text-align: center;
+}
+#side
+{
+    background-color: #EEEEEE;
+    width: 35%;
+    float:left;
+}
+form
+{
+    margin: 0 auto;
+    width: 80%;
+    box-sizing: border-box;
+    padding:3%;
+    margin-top: 50px;
+    text-align: left;
+}
+#footer 
+{
+    background-color: #57BC90;
+    color: white;
+    clear:both;
+}
+#footer p
+{
+    padding-left:10px;
+}
+@media screen and (max-width: 600px) 
+{
+
+     #header
+    {
+        position: relative;
+        padding-bottom:10%;
+    }
+    h1 
+    {
+        float: left;
+        position: absolute;
+        padding-top: 40px;
+        margin-left: 2%;
+    }
+    #meni ul li
+    {
+       font-size:17px;
+    }
+    #okvir
+    {
+        position:relative;
+    }
+    #side
+    {
+        position:absolute;
+        height:60%;
+        width:100%;
+    }
+    #glavniSadrzaj
+    {
+        position: absolute;
+        height:60%;
+        width:100%;
+        margin-top:400px;
+    }
+    #footer
+    {
+        position: absolute;
+        margin-top: 800px;
+        width: 100%;
+    }
+
+}

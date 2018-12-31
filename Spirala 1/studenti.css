@@ -1,0 +1,154 @@
+﻿body 
+{
+    font-family: Calibri;
+}
+
+
+#header 
+{
+    background-color: #77C9D4;
+}
+
+#logo
+{
+    width: 120px;
+    height: 100px;
+    padding:1%;
+}
+
+h1
+{
+    float: right;
+    color: white;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+#meni 
+{
+    clear: both;
+    overflow: hidden;
+    text-align: left;
+    background-color:#57BC90;
+    width:100%;
+}
+
+#meni ul
+{
+    margin-left: -1%;
+}
+#meni ul li
+{
+    display: inline-block;
+    margin-right: 1%;
+    font-weight:bold;
+    font-size:20px;
+}
+#meni a
+{
+    color: white;
+    text-decoration:none;
+}
+#meni a:visited
+{
+    text-decoration:none;
+}
+#side 
+{
+    background-color: #EEEEEE;
+    width: 35%;
+    height: 500px;
+    float: left;
+    box-sizing: border-box;
+}
+
+#side ul 
+{
+    list-style: none;
+    overflow-y: scroll;
+    width: 30%;
+    height: 50%;
+    margin: 0 auto;
+    padding: 2%;
+    background-color: white;
+    border: 1px solid black;
+}
+
+#side h3
+{
+    text-align:center;
+}
+#glavniSadrzaj 
+{
+    background-color:#015249;
+    width: 65%;
+    height: 500px;
+    float: right;
+    box-sizing: border-box;
+    padding: 2%;
+    padding-top:100px;
+}
+
+form 
+{
+    background-color: #EDEAE3;
+}
+
+table
+{
+    margin: 0 auto;
+    width: 60%;
+    background-color:white;
+}
+td,th
+{
+    padding:2%;
+}
+table,td,th
+{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+thead
+{
+   background-color:#EEEEEE
+}
+#footer {
+    background-color: #57BC90;
+    color: white;
+    clear: both;
+}
+#footer p
+{
+    padding-left:10px;
+}
+@media screen and (max-width: 600px) {
+
+    #header
+    {
+        position: relative;
+        padding-bottom:10%;
+    }
+    #meni ul li 
+    {
+        font-size: 17px;
+    }
+    h1 
+    {
+        float: left;
+        position: absolute;
+        padding-top: 40px;
+        margin-left: 2%;
+    }
+    #side
+    {
+        float:left;
+        width:100%;
+    }
+    #glavniSadrzaj
+    {
+        float:left;
+        width:100%;
+    }
+}

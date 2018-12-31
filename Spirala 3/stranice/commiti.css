@@ -1,0 +1,124 @@
+﻿body
+{
+    font-family: Calibri;
+}
+
+#header 
+{
+     background-color: #77C9D4;
+}
+
+#logo
+{
+    width: 120px;
+    height: 100px;
+}
+
+h1
+{
+    float: right;
+    color: white;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+#meni 
+{
+    clear: both;
+    overflow: hidden;
+    text-align: left;
+    background-color:#57BC90;
+    width:100%;
+}
+
+#meni ul
+{
+    margin-left: -1%;
+}
+#meni ul li 
+{
+    display: inline-block;
+     margin-right: 1%;
+     font-weight:bold;
+    font-size:20px;
+}
+#meni a
+{
+    color: white;
+    text-decoration:none;
+}
+#meni a:visited
+{
+    text-decoration:none;
+}
+
+#sredina {
+    background-color: #EEEEEE;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 2%;
+}
+
+table, td
+{
+    border: 2px solid #A5A5AF;
+    border-collapse:collapse;
+    background-color:white;
+}
+table a
+{
+    text-decoration:none;
+    font-weight:bold;
+}
+table a:hover
+{
+    color:#77C9D4;
+}
+th
+{
+    background-color:#015249;
+    color: white;
+    border: 2px solid black;
+}
+td,th
+{
+    padding: 10px;
+}
+#lol2
+{
+    width:100%;
+    box-sizing:border-box;
+}
+#lol2 form
+{
+    width: 30%;
+    float:left;
+    padding:10px;
+}
+#lol2 form input[type="number"], input[type="text"]
+{
+    float:right;
+}
+#footer {
+    background-color: #57BC90;
+    color: white;
+}
+@media screen and (max-width: 600px) {
+
+    #header
+    {
+        position: relative;
+        padding-bottom:10%;
+    }
+    h1 
+    {
+        float: left;
+        position: absolute;
+        padding-top: 70px;
+        margin-left: 2%;
+    }
+     #meni ul li
+    {
+       font-size:17px;
+    }
+}

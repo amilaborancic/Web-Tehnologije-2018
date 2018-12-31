@@ -1,0 +1,9 @@
+@objects
+	login	id login
+
+= Main section =
+
+	login:
+	@on desktop
+		centered horizontally inside screen
+		centered vertically inside screen

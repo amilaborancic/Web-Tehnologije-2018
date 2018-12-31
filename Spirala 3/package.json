@@ -1,0 +1,23 @@
+{
+  "name": "wt2018",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body": "^5.1.0",
+    "csv-writer": "^1.2.0",
+    "express": "^4.16.4",
+    "express-xml-bodyparser": "^0.3.0",
+    "json2csv": "^4.3.2",
+    "jsontoxml": "^1.0.1",
+    "multer": "^1.4.1",
+    "node-dir": "^0.1.17",
+    "parser": "^0.1.4",
+    "xml-js": "^1.6.8"
+  }
+}

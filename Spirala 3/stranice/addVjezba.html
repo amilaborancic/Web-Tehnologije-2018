@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>addVjezba</title>
+    <link rel="stylesheet" type="text/css" href="addVjezba.css"/>
+    <script type="text/javascript" src="validacija.js"></script>
+    <script type="text/javascript" src="addVjezba.js"></script>
+</head> 
+<body>
+    <div id="okvir">
+        <div id="header">
+            <div>
+                <img id="logo" src="https://b.kisscc0.com/20180813/rwe/kisscc0-fish-computer-icons-comparazione-di-file-grafici-d-fish-5b711d41b58a77.8014546815341397137436.png" alt="logo" />
+                <h1>Dodavanje vježbe</h1>
+            </div>
+            <div id="meni">
+                <ul>
+                    <li><a href="zadaci.html">Pregled godina</a></li>
+                    <li><a href="addGodina.html">Dodavanje godine</a></li>
+                    <li><a href="studenti.html">Pregled studenata</a></li>
+                    <li><a href="addStudent.html">Dodavanje studenata</a></li>
+                    <li><a href="commiti.html">Pregled commita</a></li>
+                    <li><a href="addVjezba.html">Dodavanje vježbi</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="glavniSadrzaj">
+            <form name="fPostojeca">
+                <h3>Dodavanje postojeće vježbe/spirale</h3>
+
+                <label>Godina</label>
+                <br />
+                <select name="sGodine">
+                    <option>2018/19</option>
+                    <option>2017/18</option>
+                    <option>2016/17</option>
+                    <option>2015/16</option>
+                    <option>2014/15</option>
+                </select>
+                <br /><br />
+                <label>Vježbe/Spirale</label>
+                <br />
+                <select name="sVjezbe">
+                    <option>Vježba X</option>
+                </select>
+                <br /> <br />
+                <input type="submit" name="submit" value="Dodaj" />
+            </form>
+            <form name="fNova" onsubmit="return false">
+                <h3>Nova vježba/spirala</h3>
+                <label>Naziv vježbe</label>
+                <br />
+                <input name="nazivvjezbe" type="text" required/>
+                <br /><br />
+                <label>Godina</label>
+                <br />
+                <select name="sGodine">
+                    <option>2018/19</option>
+                    <option>2017/18</option>
+                    <option>2016/17</option>
+                    <option>2015/16</option>
+                    <option>2014/15</option>
+                </select>
+                <br /><br />
+                <textarea name="txt" >
+Zadatak 1
+Zadatak 2
+Zadatak 3
+</textarea>
+                <br /><br />
+                <select name="sZadatak">
+                    <option>Zadatak X</option>
+                </select>
+                <input type="button" name="dZadatak" value="Dodaj zadatak" />
+                <br /><br />
+                <input type="checkbox" name="spirala" />
+                <label>Spirala</label>
+                <br /><br />
+                <input type="button" value="Dodaj" onclick="return validiraj()"/>
+                <div id="porukice"></div>
+            </form>
+        </div>
+        <div id="footer"><p>Web tehnologije 2018/19</p></div>
+    </div>
+</body>
+</html>

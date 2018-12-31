@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>addStudent</title>
+    <link rel="stylesheet" type="text/css" href="addStudent.css" />
+    <script src="validacija.js"></script>
+    <script src="addStudent.js"></script>
+</head>
+<body>
+    <div id="okvir">
+        <div id="header">
+            <div>
+                <img id="logo" src="https://b.kisscc0.com/20180813/rwe/kisscc0-fish-computer-icons-comparazione-di-file-grafici-d-fish-5b711d41b58a77.8014546815341397137436.png" alt="logo" />
+                <h1>Dodavanje studenata</h1>
+            </div>
+            <div id="meni">
+                <ul>
+                    <li><a href="zadaci.html">Pregled godina</a></li>
+                    <li><a href="addGodina.html">Dodavanje godine</a></li>
+                    <li><a href="studenti.html">Pregled studenata</a></li>
+                    <li><a href="addStudent.html">Dodavanje studenata</a></li>
+                    <li><a href="commiti.html">Pregled commita</a></li>
+                    <li><a href="addVjezba.html">Dodavanje vježbi</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div id="glavniSadrzaj">
+            <form name="fPojedinacni">
+                <h3>Pojedinačni unos</h3>
+                <label>Godina</label>
+                <br />
+                <select name="godina">
+                    <option>2018/19</option>
+                    <option>2017/18</option>
+                    <option>2016/17</option>
+                    <option>2015/16</option>
+                    <option>2014/15</option>
+                </select>
+                <br /><br />
+                <label>Ime i prezime</label>
+                <br />
+                <input type="text" name="ime" required/>
+                <br /><br />
+                <label>Index</label>
+                <br />
+                <input type="number" name="index" required/>
+                <br /><br />
+                <label>Email</label>
+                <br />
+                <input type="email" name="email" required/>
+                <br /><br />
+                <input type="button" name="submit" onclick="return validiraj()" value="Unesi" />
+                <div id="porukice"></div>
+            </form>
+            <form name="fMasovni">
+                <h3>Masovni unos</h3>
+                <label>Godina</label>
+                <br />
+                <select name="godina">
+                    <option>2018/19</option>
+                    <option>2017/18</option>
+                    <option>2016/17</option>
+                    <option>2015/16</option>
+                    <option>2014/15</option>
+                </select>
+                <br /><br />
+                <label>CSV fajl</label>
+                <br />
+                <input type="file" name="csv lista" />
+                <br /><br />
+                <input type="submit" value="Unesi" />
+            </form>
+        </div>
+        <div id="footer"><p>Web tehnologije 2018/19</p></div>
+    </div>
+</body>
+</html>

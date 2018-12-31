@@ -1,0 +1,31 @@
+@objects
+	header	#header
+	nazivStranice	#header h1
+	meni	#meni
+	logo	#header #logo
+	footer	#footer
+	footerTekst	#footer p
+	side	#side
+	glavniSadrzaj	#glavniSadrzaj
+= Main section =
+
+	@on desktop
+		header:
+			contains logo, nazivStranice, meni
+		nazivStranice:
+			inside header ~1% left right ~1% top
+		logo:
+			inside header ~1%
+		footerTekst:
+			text-is: "Web tehnologije 2018/19"
+		glavniSadrzaj:
+			width 65% of screen
+		side:
+			width 35% of screen
+	@on mobile
+		nazivStranice:
+			below meni
+			inside header
+		side:
+			above glavniSadrzaj
+

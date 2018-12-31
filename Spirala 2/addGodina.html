@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>addGodina</title>
+    <link rel="stylesheet" type="text/css" href="addGodina.css" />
+    <script type="text/javascript" src="addGodina.js"></script>
+    <script type="text/javascript" src="validacija.js"></script>
+</head>
+<body>
+    <div id="okvir">
+        <div id="header">
+            <div>
+                <img id="logo" src="https://b.kisscc0.com/20180813/rwe/kisscc0-fish-computer-icons-comparazione-di-file-grafici-d-fish-5b711d41b58a77.8014546815341397137436.png" alt="logo" />
+                <h1>Dodavanje godine</h1>
+            </div>
+            <div id="meni">
+                <ul>
+                    <li><a href="zadaci.html">Pregled godina</a></li>
+                    <li><a href="addGodina.html">Dodavanje godine</a></li>
+                    <li><a href="studenti.html">Pregled studenata</a></li>
+                    <li><a href="addStudent.html">Dodavanje studenata</a></li>
+                    <li><a href="commiti.html">Pregled commita</a></li>
+                    <li><a href="addVjezba.html">Dodavanje vježbi</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div id="side">
+            <form onsubmit="return false">
+                <h3>Unos godine:</h3>
+                <label>Naziv godine</label>
+                <br />
+                <input type="text" name="naziv" required />
+                <br /><br />
+                <label>Naziv repozitorija vježbe</label>
+                <br />
+                <input type="text" name="rvjezbe" required />
+                <br /><br />
+                <label>Naziv repozitorija spirale</label>
+                <br />
+                <input type="text" name="rspiral" required />
+                <br /><br />
+                <input type="reset" value="Poništi" onclick="window.location.reload()" />
+                <input type="button" value="Unesi" onclick="return validiraj()" />
+
+                <div id="lol"></div>
+            </form>
+        </div>
+        <div id="glavniSadrzaj">
+            <div class="godina">
+                <p>2015/16</p>
+                <p>
+                    Broj studenata: 90
+                    <br />
+                    Broj vježbi: 10
+                    <br />
+                    Broj spirala: 4
+                </p>
+            </div>
+            <div class="godina">
+                <p>2016/17</p>
+                <p>
+                    Broj studenata: 90
+                    <br />
+                    Broj vježbi: 10
+                    <br />
+                    Broj spirala: 4
+                </p>
+            </div>
+            <div class="godina"></div>
+            <div class="godina"></div>
+        </div>
+        <div id="footer"><p>Web tehnologije 2018/19</p></div>
+    </div>
+</body>
+</html>

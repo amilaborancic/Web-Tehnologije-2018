@@ -1,0 +1,27 @@
+{
+  "testId" : "1-addgodina.gspec",
+  "name" : "addGodina.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  addGodina.gspec --url http://localhost/addGodina.html --size 1024x768 --htmlreport izvjestaji",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: addGodina.gspec included tags: ",
+          "status" : "info",
+          "time" : 1541165473485,
+          "sections" : [ ],
+          "objects" : { },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1541165473029,
+        "type" : "node"
+      } ],
+      "time" : 1541165465594,
+      "type" : "node"
+    } ]
+  }
+}

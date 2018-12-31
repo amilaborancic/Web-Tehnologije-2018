@@ -1,0 +1,32 @@
+﻿body {
+    background-color: #77C9D4;
+    font-family:Calibri;
+}
+#login {
+    background-color: #EEEEEE;
+    box-sizing: border-box;
+    width: 350px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -175px;
+}
+#login form
+{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#login form input
+{
+    float: right;
+}
+input[name="login"] 
+{
+    margin-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}

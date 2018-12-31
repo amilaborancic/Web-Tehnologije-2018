@@ -1,0 +1,118 @@
+﻿body 
+{
+    font-family: Calibri;
+}
+#okvir
+{
+    background-color:#A5A5AF;
+}
+
+#header 
+{
+    background-color: #77C9D4;
+}
+
+#logo 
+{
+    width: 120px;
+    height: 100px;
+    padding: 1%;
+}
+h1 
+{
+    float: right;
+    color: white;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+#meni {
+  
+    clear: both;
+    overflow: hidden;
+    text-align: left;
+    background-color:#57BC90;
+    width:100%;
+}
+#meni ul 
+{
+    margin-left: -1%;
+}
+#meni ul li
+{
+    display: inline-block;
+    margin-right: 1%;
+    font-weight:bold;
+    font-size:20px;
+}
+#meni a
+{
+    color: white;
+    text-decoration:none;
+}
+#meni a:visited
+{
+    text-decoration:none;
+}
+#glavniSadrzaj
+{
+    background-color: #EEEEEE;
+    width: 85%;
+    height: 700px;
+    padding: 2%;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing:border-box;
+    
+}
+
+#noviZadatak {
+    background-color: #FFFFFF;
+    display: table;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 10%;
+    padding: 2%;
+    text-align: left;
+}
+#noviZadatak label
+{
+    margin-right: 5px;
+}
+
+#noviZadatak h3
+{
+    text-align:center;
+}
+
+#footer {
+    background-color: #57BC90;
+    color: white;
+}
+#footer p
+{
+    padding-left:10px;
+}
+@media screen and (max-width: 600px) {
+
+    #header
+    {
+        position: relative;
+        padding-bottom:10%;
+    }
+    h1 
+    {
+        float: left;
+        position: absolute;
+        padding-top: 40px;
+        margin-left: 2%;
+    }
+    #meni ul li
+    {
+       font-size:17px;
+    }
+    #glavniSadrzaj
+    {
+        width: 100%;
+    }
+}

@@ -1,0 +1,118 @@
+﻿body 
+{
+    font-family: Calibri;
+}
+#okvir
+{
+    background-color:#A5A5AF;
+}
+#header 
+{
+    background-color: #77C9D4;
+}
+#logo 
+{
+    width: 120px;
+    height: 100px;
+}
+
+h1
+{
+    float: right;
+    color: white;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+#meni 
+{
+    clear: both;
+    overflow: hidden;
+    text-align: left;
+    background-color:#57BC90;
+    width:100%;
+}
+#meni ul
+{
+    margin-left: -1%;
+}
+#meni ul li
+{   
+    display: inline-block;
+    margin-right: 1%;
+    font-weight:bold;
+    font-size:20px;
+}
+#meni a
+{
+    color: white;
+    text-decoration:none;
+}
+#meni a:visited
+{
+    text-decoration:none;
+}
+#glavniSadrzaj {
+    background-color: #EEEEEE;
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+form[name="fPostojeca"], form[name="fNova"] {
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    width: 300px;
+    box-sizing: border-box;
+    padding: 3%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: left;
+}
+form[name="fPostojeca"] h3, form[name="fNova"] h3
+{
+    text-align: center;
+}
+fNova input[type="submit"]
+{
+    float: right;
+}
+textarea[name="txt"]
+{
+    height: 50px;
+}
+#footer {
+    background-color: #57BC90;
+    color: white;
+    overflow: hidden;
+}
+#footer p
+{
+    padding-left:10px;
+    margin:0;
+}
+@media screen and (max-width: 600px) 
+{
+    #header
+    {
+        position: relative;
+        padding-bottom:10%;
+    }
+    h1 
+    {
+        float: left;
+        position: absolute;
+        padding-top: 70px;
+        margin-left: 2%;
+    }
+    #meni ul li
+    {
+       font-size:17px;
+    }
+    #glavniSadrzaj 
+    {
+        width: 100%;
+    }
+}

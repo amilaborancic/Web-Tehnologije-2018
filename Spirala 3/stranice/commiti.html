@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>commiti</title>
+    <link rel="stylesheet" type="text/css" href="commiti.css" />
+    <script src="committabelav2.js"></script>
+    <script type="text/javascript" src="commiti.js"></script>
+    <script type="text/javascript" src="validacija.js"></script>
+</head>
+<body>
+    <div id="okvir">
+        <div id="header">
+            <img id="logo" src="https://b.kisscc0.com/20180813/rwe/kisscc0-fish-computer-icons-comparazione-di-file-grafici-d-fish-5b711d41b58a77.8014546815341397137436.png" alt="logo" />
+            <h1>Pregled commita</h1>
+            <div id="meni">
+                <ul>
+                    <li><a href="zadaci.html">Pregled godina</a></li>
+                    <li><a href="addGodina.html">Dodavanje godine</a></li>
+                    <li><a href="studenti.html">Pregled studenata</a></li>
+                    <li><a href="addStudent.html">Dodavanje studenata</a></li>
+                    <li><a href="commiti.html">Pregled commita</a></li>
+                    <li><a href="addVjezba.html">Dodavanje vježbi</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="sredina">
+            <p>Student: Neko Nekić, 12345</p>
+            <p>Naziv vježbe/spirale: Vježba 1</p>
+            <p>Repozitorij: <a href="">Hyperlink</a></p>
+            <br />
+            <br />
+            <div id="lol">
+                <form onsubmit="return false">
+                    <h4>Kreiranje tabele</h4>
+                    <label>Broj zadataka:</label>
+                    <input type="number" onsubmit="return false" id="numtabela" min="1" />
+                    <br />
+                    <br />
+                    <input type="button" value="Kreiraj" onclick="return kreirajTabelu()" />
+                    <br />
+                    <br />
+                </form>
+            </div>
+            <div id="lol2">
+                <form onsubmit="return false">
+                    <h4>Dodavanje commita</h4>
+                    <label>Rbr zadatka</label>
+                    <input type="number" id="rbZaddodaj" />
+                    <br /><br />
+                    <label>Url</label>
+                    <input type="text" id="txtdodaj" />
+                    <br /><br />
+                    <input type="button" value="Dodaj commit" onclick="return dodaj(document.getElementById('rbZaddodaj'), document.getElementById('txtdodaj'))" />
+                </form>
+                <form onsubmit="return false">
+                    <h4>Editovanje commita</h4>
+                    <label>Rbr zadatka</label>
+                    <input type="number" id="rbZadedit" />
+                    <br /><br />
+                    <label>Rbr commita</label>
+                    <input type="number" id="rbComedit" />
+                    <br /><br />
+                    <label>Url</label>
+                    <input type="text" id="txtedit" />
+                    <br /><br />
+                    <input type="button" value="Edituj commit" onclick="edituj(document.getElementById('rbZadedit'), document.getElementById('rbComedit'), document.getElementById('txtedit'))" />
+                </form>
+                <form onsubmit="return false">
+                    <h4>Brisanje commita</h4>
+                    <label>Rbr zadatka</label>
+                    <input type="number" id="rbZadbrisi" />
+                    <br /><br />
+                    <label>Rbr commita</label>
+                    <input type="number" id="rbCombrisi" />
+                    <br /><br />
+                    <input type="button" value="Obrisi commit" onclick="brisi(document.getElementById('rbZadbrisi'), document.getElementById('rbCombrisi'))" />
+
+                </form>
+                <div id="porukice"></div>
+            </div>
+        </div>
+        <div id="footer">Web tehnologije 2018/19</div>
+    </div>
+</body>
+</html>

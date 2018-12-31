@@ -1,0 +1,27 @@
+{
+  "testId" : "1-addvjezba.gspec",
+  "name" : "addVjezba.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  addVjezba.gspec --url http://localhost/addVjezba.html --size 1024x768 --htmlreport izvjestaji",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: addVjezba.gspec included tags: ",
+          "status" : "info",
+          "time" : 1541165529340,
+          "sections" : [ ],
+          "objects" : { },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1541165528937,
+        "type" : "node"
+      } ],
+      "time" : 1541165520755,
+      "type" : "node"
+    } ]
+  }
+}

@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>addZadatak</title>
+    <link rel="stylesheet" type="text/css" href="addZadatak.css" />
+    <script src="validacija.js"></script>
+    <script src="addZadatak.js"></script>
+</head>
+<body>
+    <div id="okvir">
+        <div id="header">
+            <div>
+                <img id="logo" src="https://b.kisscc0.com/20180813/rwe/kisscc0-fish-computer-icons-comparazione-di-file-grafici-d-fish-5b711d41b58a77.8014546815341397137436.png" alt="logo" />
+                <h1>Dodavanje zadatka</h1>
+            </div>
+            <div id="meni">
+                <ul>
+                    <li><a href="zadaci.html">Pregled godina</a></li>
+                    <li><a href="addGodina.html">Dodavanje godine</a></li>
+                    <li><a href="studenti.html">Pregled studenata</a></li>
+                    <li><a href="addStudent.html">Dodavanje studenata</a></li>
+                    <li><a href="commiti.html">Pregled commita</a></li>
+                    <li><a href="addVjezba.html">Dodavanje vježbi</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div id="glavniSadrzaj">
+            <form id="noviZadatak" action="http://localhost:8080/addZadatak" method="POST" enctype="multipart/form-data">
+                <h3>Novi zadatak</h3>
+                <label>Naziv zadatka</label>
+                <input type="text" name="naziv" required />
+                <br /><br />
+                <label>Tekst postavke *</label>
+                <br /><br />
+                <input type="file" name="postavka" required />
+                <br /><br />
+                <input type="submit" value="Dodaj" onclick="return validiraj()"/>
+                <div id="poruke"></div>
+            </form>
+        </div>
+        <div id="footer">Web tehnologije 2018/19</div>
+    </div>
+</body>
+</html>

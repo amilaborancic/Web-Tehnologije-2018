@@ -1,0 +1,176 @@
+﻿body 
+{
+    font-family: Calibri;
+}
+#okvir
+{
+    height: 800px;
+}
+#header 
+{
+    background-color: #77C9D4;
+}
+
+#logo {
+    width: 120px;
+    height: 100px;
+    padding:1%;
+}
+
+h1 {
+    float: right;
+    color: white;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+#meni {
+    clear: both;
+    overflow: hidden;
+    text-align: left;
+    background-color:#57BC90;
+    width:100%;
+}
+#meni ul
+{
+    margin-left: -1%;
+}
+#meni ul li
+{
+    display: inline-block;
+    margin-right: 1%;
+    font-weight:bold;
+    font-size:20px;
+}
+#meni a
+{
+    color: white;
+    text-decoration:none;
+}
+#meni a:visited
+{
+    text-decoration:none;
+}
+.cetvrtina {
+    width: 25%;
+    float: left;
+    padding: 2%;
+    background-color: #EEEEEE;
+}
+.cetvrtina form
+{
+    width: 80%;
+    margin: 0 auto;
+}
+.cetvrtina form input
+{
+    width: 100%;
+    margin-bottom: 5%;
+}
+#godina
+{
+    list-style: none;
+    overflow-y: scroll;
+    width: 80%;
+    height: 50%;
+    margin: 0 auto;
+    padding: 2%;
+    background-color: white;
+    border: 1px solid black;
+
+}
+
+#imena {
+    list-style: none;
+    overflow-y: scroll;
+    width: 80%;
+    height: 50%;
+    margin: 0 auto;
+    padding: 2%;
+    background-color: white;
+    border: 1px solid black;
+}
+.cetvrtina h3
+{
+    text-align:center;
+}
+.polovina {
+    width: 50%;
+    padding: 2%;
+    float: right;
+    overflow-y: scroll;
+    background-color: #A5A5AF;
+}
+
+.folder
+{
+    background-color:#EEEEEE;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    clear:both;
+}
+
+.item
+{
+    background-color:#77C9D4;
+    width: 100px;
+    height: 100px;
+    line-height:100px; 
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: honeydew;
+    text-align: center;  
+}
+.cetvrtina, .polovina
+{
+    border: 1px solid black;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 600px;
+    
+}
+
+#footer {
+    background-color: #57BC90;
+    color: white;
+}
+#footer p
+{
+    padding-left:10px;
+}
+@media screen and (max-width: 600px) {
+
+    #header
+    {
+        position: relative;
+        padding-bottom:10%;
+    }
+    h1 
+    {
+        float: left;
+        position: absolute;
+        padding-top: 40px;
+        margin-left: 2%;
+    }
+    #meni ul li
+    {
+       font-size:17px;
+    }
+    .cetvrtina
+    {
+        float:left;
+        width:100%;
+    }
+    .polovina
+    {
+        float:left;
+        width:100%;
+    }
+    #footer
+    {
+        clear:both;
+    }
+}

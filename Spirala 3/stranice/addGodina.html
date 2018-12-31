@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>addGodina</title>
+    <link rel="stylesheet" type="text/css" href="addGodina.css" />
+    <script type="text/javascript" src="addGodina.js"></script>
+    <script type="text/javascript" src="validacija.js"></script>
+    <script  src="GodineAjax.js">
+       
+    </script>
+</head>
+
+<body onload="GodineAjax(document.getElementById('glavniSadrzaj'))">
+    <div id="okvir">
+        <div id="header">
+            <div>
+                <img id="logo" src="https://b.kisscc0.com/20180813/rwe/kisscc0-fish-computer-icons-comparazione-di-file-grafici-d-fish-5b711d41b58a77.8014546815341397137436.png"
+                    alt="logo" />
+                <h1>Dodavanje godine</h1>
+            </div>
+            <div id="meni">
+                <ul>
+                    <li><a href="zadaci.html">Pregled godina</a></li>
+                    <li><a href="addGodina.html">Dodavanje godine</a></li>
+                    <li><a href="studenti.html">Pregled studenata</a></li>
+                    <li><a href="addStudent.html">Dodavanje studenata</a></li>
+                    <li><a href="commiti.html">Pregled commita</a></li>
+                    <li><a href="addVjezba.html">Dodavanje vježbi</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div id="side">
+            <form action="http://localhost:8080/addGodina" method="POST">
+                <h3>Unos godine:</h3>
+                <label>Naziv godine</label>
+                <br />
+                <input type="text" name="nazivGod" required />
+                <br /><br />
+                <label>Naziv repozitorija vježbe</label>
+                <br />
+                <input type="text" name="nazivRepVje" required />
+                <br /><br />
+                <label>Naziv repozitorija spirale</label>
+                <br />
+                <input type="text" name="nazivRepSpi" required />
+                <br /><br />
+                <input type="reset" value="Poništi" onclick="window.location.reload()" />
+                <input type="submit" value="Unesi" />
+
+                <div id="lol"></div>
+            </form>
+        </div>
+        <div id="glavniSadrzaj">
+           
+        </div>
+        <div id="footer">
+            <p>Web tehnologije 2018/19</p>
+        </div>
+    </div>
+</body>
+
+</html>
