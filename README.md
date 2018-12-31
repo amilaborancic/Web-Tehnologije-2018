@@ -4,7 +4,7 @@ Ovaj projekat je urađen u sklopu predmeta "Web tehnologije". Projekat je podije
 
 ## Contributors ##
 
-Amila Boraančić
+Amila Borančić
 
 ### SPIRALA 1 ###
 
