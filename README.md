@@ -1,6 +1,6 @@
 # O projektu #
 
-Ovaj projekat je urađen u sklopu predmeta "Web tehnologije". Projekat je podijeljen na 4 projektna zadatka i radio se cijeli V semestar. Svaka spirala se nalazi na zasebnom branch-u.
+Ovaj projekat je urađen u sklopu predmeta "Web tehnologije". Projekat je podijeljen na 4 projektna zadatka i radio se cijeli V semestar.
 
 ## Contributors ##
 
